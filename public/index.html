@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Iconify (for fonts) -->
+  <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+  <!-- my CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.scss">
+  <link rel="stylesheet" href="css/hover.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+
+
+  <title>Updated Portfolio</title>
+</head>
+
+<body style="background-image: url(images/background.png); background-size: 600px 600px">
+  <div class="container">
+    <div class="jumbotron">
+      <div class="display-10">
+        <p>const futureDev = { </p>
+        <p> &nbsp; name: 'Oliver Sun',</p>
+        <div id="typed-strings">
+          <p> &nbsp; skills: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery']</p>
+        </div>
+        <span id="typed"></span>
+        <p>};</p>
+      </div>
+    </div>
+    <br>
+    <button id="scroll-button" style="display: none;">Back to Top</button>
+    <!-- Main Accordian Container -->
+    <div id="accordion">
+      <!-- Accordian Content Box 1 (About Me) -->
+      <h3 class="ui-accordion-header" id="about-me">About Me</h3>
+      <div class="card">
+        <img src="images/github.jpeg" class="card-img-top" id="github-img">
+        <div class="card-body" style="height: 300px;">
+          <h5 class="card-title"></h5>
+          <p class="card-text">I retired after 20 year career in financial services in the middle of 2015. I've been on a personal sabbatical for the last four years. During this time, I started and operated my own business. A dog jogging and dog walking business. For a while,
+            I was pretty successful, mainly because I think I was the only dog walker in San Francisco who offered a service of running dogs. Unfortunately, however, I got a stress fracture in my leg from running so much and had to put my business on
+            hold for 8 months. When I went back to my dog running business, I had to hold back literally from the mileage as per instructed by my orthopedic doctors. Needless to say I had to pivot.</p>
+          <p class="card-text">
+            I've always been a tech product geek. It wasn't until March-April of this year that I really started looking into how things worked under the hood. One thing led to another and now I'm currently enrolled in a coding boot camp in San Francisco. I'm looking
+            to start a new chapter in my life with a second career as a software developer and at the age of 47 (almost 48) and after not working in an office for over four years. What are the odds? Life is not exciting to me if you don't have some kind
+            of extreme challenge to conquer and I have a big one in front of me.
+          </p>
+        </div>
+      </div>
+      <!-- Accordian Content Box 2 (Portfolio) -->
+      <h3 class="ui-accordion-header" id="portfolio">Portfolio</h3>
+      <div id=portfolio-container>
+        <p><strong>Featured Projects:</strong></p>
+        <br>
+        <div id="featured-projects">
+          <div id="gify-container">
+            <p id="gify-title">GifTastic</p>
+            <img src="images/gify.png " id="gify-img">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gifyModal" id="gify-modal-button" style="display: block; margin-left: 120px;">Details</button>
+            <div class="modal fade" id="gifyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <h5 class="modal-title" id="gify-modal-header">GifTastic</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="gify-modal-body">
+                    <p>Our project was to create an app that would utilize what we learned in class about jQuery AJAX calls and to query the Giphy API database to get gifs. We have to create topic buttons which were appended to the website. The user would
+                      click on a topic button and the website would display 10 gifs from that topic from the API. When the user clicks on another topic button, 10 new gifs would appear and the previous 10 would be replaced. Additionally, there was an
+                      input form where the user could enter in a new topic and a new button would appear. When clicked, the same process described above would repeat. Finally, we had to code a feature where the user could click on the gif image to get
+                      it to play and then click on the image again to get the gif to stop. This last step proved to be my biggest challenge.</p>
+                    <p>I solved this challenge by applying adding data attributes to the images returned from the API object, another topic we covered in class. This project was probably the best example of me applying the techniques and methods learned
+                      in class to make the app work.</p>
+                    <p>For details, code snippets and to see the app in action, please let the Martin and Taka guide you to the appropriate page. Martin (Blue Kitty) to the Github repo and (Taka) Red Kitty to the deployed version on Github.</p>
+                    <a href="https://github.com/Olisun/GifTastic" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    <a href="https://olisun.github.io/GifTastic/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                  </div>
+                  <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <button id="close-modal-one" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="train-container">
+            <p id="train-title">Train-Schedules</p>
+            <img src="images/train.png " id="train-img">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#trainModal" id="train-modal-button" style="display: block; margin-left: 150px;">Details</button>
+            <div class="modal fade" id="trainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <h5 class="modal-title" id="train-modal-title">Train-Schedules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="train-modal-body">
+                    <p>Utilizing what we learned with Firebase’s Realtime Database, we were tasked with building a mock train schedule app where the user would fill out input fields on a form and the app would capture that data and send it up to the Firebase
+                      cloud. The data included the name of the train line; the destination; the train departure frequency and what time the first train leaves for the day. Taking this data, we were tasked with calculating when the next train would arrive
+                      and the append a schedule back down to the DOM.</p>
+                    <p>This project required not only Firebase database methods, but also Moment.js. The task to write code to accurately predict the train schedule and to format the times with Moment was a great learning expeience. Additionally, I ran into
+                      some challenges appending the schedule back down to the table on the website.</p>
+                    <p>My solution to the append issue was pretty simple but it proved to me that my problem solving skills are improving. I created a specific ID in the body section of the table and it worked. Learning Moment.js on the fly was a good practice
+                      is utilizing documentation, something that is standard practice in this field and something that I’m still learning to master.</p>
+                    <p>Martin (Blue Kitty) will take you to my Github repository for this project. (Taka) Red Kitty will take you to the deployed site on Github pages.</p>
+                    <a href="https://github.com/Olisun/Train-Schedules" target="blank"> <i class="fa fa-github" style="font-size: 30px; color:  rgba(32, 32, 172, 1);"></i></a>
+                    <a href="https://olisun.github.io/Train-Schedules/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                  </div>
+                  <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <button id="close-modal-two" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="trivia-container">
+            <p id="trivia-title">Trivia Game</p>
+            <img src="images/trivia.png " id="trivia-img">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#triviaModal" id="trivia-modal-button" style="display: block;margin-left: 150px;">Details</button>
+            <div class="modal fade" id="triviaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <h5 class="modal-title" id="trivia-modal-title">Trivia Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="trivia-modal-body">
+                    <p>Our project was to create a multiple choice and or true-false game using where the user must answer a set of questions within a given amount of time. If the time runs out, the quiz automatically stops. If the user finishes before time
+                      is up, she is given the option to see her score. The game must keep track of answers guessed correctly; answers guess incorrectly as well as unanswered questions.</p>
+                    <p>I chose radio buttons for the HTML DOM elements. Not only did this work stylistically but you can also grab the input values from each radio button using javascript.</p>
+                    <p>This proved to be a challenging assignment for me. Initially, I coded all my logic around each radio button answer. I ran into a major bug where if the user answered a question but then changed her mind, both marked answers were counted.</p>
+                    <p>My solution was to refactor the code around each set of questions rather than each individual radio button answer. Doing it this way, I was able to implement the if / else logic accurately and if the user marked one answer but changed
+                      it to another answer, the correct score was calculated.</p>
+                    <p>For further details about this project, please click Martin (Blue Kitty) to be taken to the repository and Taka (Red Kitty) to see the game in action on the Github deployed site.</p>
+                    <a href="https://github.com/Olisun/TriviaGame" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1)"></i></a>
+                    <a href="https://olisun.github.io/TriviaGame/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color:  rgba(206, 25, 25, 1);"></i></a>
+                  </div>
+                  <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <button id="close-modal-three" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <br><br>
+          <p><strong>Other Projects:</strong></p>
+          <table class="table table-striped ">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project Title</th>
+                <th scope="col">Repo Link</th>
+                <th scope="col">Deployed Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Movie Tracker App (Project 2 Team Project)</td>
+                <td>
+                  <a href="https://github.com/hagoodj/Project-2" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                </td>
+                <td>
+                  <a href="https://project-two-mock.herokuapp.com/" target="blank "> <span class="iconify" data-icon="simple-icons:heroku" data-inline="false" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Web Developement Lessons List (Built with Node, Express Servers, Handelbars and MySql)</td>
+                  <td>
+                    <a href="https://github.com/Olisun/Node-Express-Handlebars" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                  </td>
+                  <td>
+                    <a href="https://dry-cove-69674.herokuapp.com/" target="blank "> <span class="iconify" data-icon="simple-icons:heroku" data-inline="false" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Friend-Finder (Built with Node and Express Servers)</td>
+                  <td>
+                    <a href="https://github.com/Olisun/Friend-Finder" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                  </td>
+                  <td>
+                    <a href="https://bestie-finder.herokuapp.com/" target="blank "> <span class="iconify" data-icon="simple-icons:heroku" data-inline="false" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Bamazon (A Node.js & MySql Application)</td>
+                  <td>
+                    <a href="https://github.com/Olisun/Bamazon" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                  </td>
+                  <td>
+                    <a href="https://olisun.github.io/Bamazon/index.html" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>ROUTEstaurants (Team Project)</td>
+                  <td>
+                    <a href="https://github.com/hagoodj/Project-1" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                  </td>
+                  <td>
+                    <a href="https://hagoodj.github.io/Project-1/" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>HW-Wireframe</td>
+                    <td>
+                      <a href="https://github.com/Olisun/HW-Wireframe-Redo" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    </td>
+                    <td>
+                      <a href="https://olisun.github.io/HW-Wireframe-Redo/" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Psyhcic Game</td>
+                    <td>
+                      <a href="https://github.com/Olisun/Psychic-Game" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    </td>
+                    <td>
+                      <a href="https://olisun.github.io/Psychic-Game/assets/index.html" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Word Guess Game</td>
+                    <td>
+                      <a href="https://github.com/Olisun/Word-Guess-Game" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    </td>
+                    <td>
+                      <a href="https://olisun.github.io/Word-Guess-Game/assets/index.html" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Unit-4-Game (Crystals Collector)</td>
+                    <td>
+                      <a href="https://github.com/Olisun/unit-4-game" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    </td>
+                    <td>
+                      <a href="https://olisun.github.io/unit-4-game/index.html" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Basic Portfolio</td>
+                    <td>
+                      <a href="https://github.com/Olisun/Basic-Portfolio-New" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    </td>
+                    <td>
+                      <a href="https://olisun.github.io/Basic-Portfolio-New/" target="blank "> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                    </td>
+                  </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Accordian Content Box 3 (Contact) -->
+      <h3 class="ui-accordion-header" id="contact">Contact <i class="fa fa-mobile-phone" style="font-size: 20px;color:rgba(206, 25, 25, 1)"></i> <i class="fa fa-envelope" style="font-size: 20px;color:red"></i> <i class="fa fa-github" style="font-size: 20px; color: rgba(206, 25, 25, 1);"></i>
+        <i class="fa fa-linkedin-square" style="font-size: 20px; color: rgba(206, 25, 25, 1);"></i>
+      </h3>
+      <div>
+        <table class="table" id="contact-table">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><i class="fa fa-mobile-phone" style="font-size: 30px;color:rgba(206, 25, 25, 1)"></i></th>
+              <td>(415) 967-8626</td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="fa fa-envelope" style="font-size: 30px;color:rgba(206, 25, 25, 1)"></i></th>
+              <td><a href="mailto:olisun@mac.com">olisun@mac.com</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></th>
+              <td><a href="https://github.com/Olisun" target="blank">GitHub Profile</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="fa fa-linkedin-square" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></th>
+              <td><a href="https://www.linkedin.com/in/oliver-sun-4b6baba/" target="blank">Linkedin Profile</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="message"><strong>Direct Message Me:</strong></p>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/javascript/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+    <!-- my JavaScript -->
+    <script type="text/javascript " src="javascript/animations.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+#scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 13px;
+  font-family: Monaco, 'Courier New', monospace;
+  border: 1 px solid transparent;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+}
+
+.container {
+  width: 60%;
+}
+
+.jumbotron {
+  height: 600px;
+  margin-bottom: -10px;
+  background: rgba(23, 23, 23, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Monaco, 'Courier New', monospace;
+}
+
+#scroll-button:hover {
+  cursor: pointer;
+}
+
+#accordion {
+  margin-bottom: 60px;
+  margin-top: -20px;
+}
+
+#accordion .ui-accordion-content {
+  max-height: 540px;
+  background-color: rgba(150, 150, 151, 1);
+}
+
+#about-me, #portfolio, #contact {
+  color: rgba(255, 255, 255, 1);
+  font-family: Monaco, 'Courier New', monospace;
+}
+
+.display-10 {
+  font-family: Monaco, 'Courier New', monospace;
+  text-align: left;
+  padding-left: 75px;
+}
+
+.card-text {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
+}
+
+#featured-projects {
+  display: flex;
+}
+
+#gify-container {
+  display: block;
+}
+
+#gify-modal-header, #train-modal-title, #trivia-modal-title {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 18px;
+}
+
+#gify-modal-body, #train-modal-body, #trivia-modal-body {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
+  background-color: rgba(150, 150, 151, 1);
+  color: navy;
+}
+
+#gify-modal-button, #train-modal-button, #trivia-modal-button {
+  background-color: blueviolet;
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
+}
+
+#close-modal-one, #close-modal-two, #close-modal-three {
+  background-color: blueviolet;
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
+}
+
+#gify-title {
+  margin-left: 125px;
+}
+
+#train-title {
+  margin-left: 120px;
+}
+
+#trivia-title {
+  margin-left: 140px;
+}
+
+#gify-img, #train-img, #trivia-img, #github-img {
+  height: 200px;
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border: 5px solid rgba(74, 0, 140, 1);
+  outline: 5px ridge rgba(32, 32, 172, 1);
+}
+
+#gify, #train, #trivia {
+  display: flex;
+  margin: auto;
+}
+
+#gify-img {
+  margin-left: 60px;
+}
+
+#train-img {
+  margin-left: 90px;
+}
+
+#trivia-img {
+  margin-left: 90px;
+}
+
+#contact-table {
+  width: 50%;
+}
+
+table {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
+}
+
+form {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
+}
+
+#message {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    margin: auto;
+    width: 576px;
+  }
+  .container {
+    width: 100%;
+    font-family: Monaco, 'Courier New', monospace;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: auto;
+    width: 576px;
+  }
+  .container {
+    width: 100%;
+    font-family: Monaco, 'Courier New', monospace;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  body {
+    margin: auto;
+    width: 576px;
+  }
+  .container {
+    width: 90%;
+    font-family: Monaco, 'Courier New', monospace;
+  }
+}
