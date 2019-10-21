@@ -5,13 +5,16 @@ module.exports = function(sequelize, DataTypes) {
     name: {
       type: DataTypes.STRING,
       unique: true,
-      allowNull: false
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
     },
     message: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
-        len: [1, 140]
+        len: [1]
       }
     }
   });

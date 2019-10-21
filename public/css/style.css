@@ -25,7 +25,7 @@
   font-family: Monaco, 'Courier New', monospace;
 }
 
-#scroll-button:hover {
+#scroll-button, #gify-modal-button, #train-modal-button, #trivia-modal-button, #close-modal-one, #close-modal-two, #close-modal-three, #ping:hover {
   cursor: pointer;
 }
 
@@ -113,6 +113,10 @@
   margin: auto;
 }
 
+#github-img {
+  margin-left: 30px;
+}
+
 #gify-img {
   margin-left: 60px;
 }
@@ -142,6 +146,12 @@ form {
 #message {
   font-family: Monaco, 'Courier New', monospace;
   font-size: 15px;
+}
+
+#ping {
+  background-color: blueviolet;
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 960px) {

@@ -21,6 +21,7 @@ app.use(express.static("public"));
 //ROUTES
 // Import routes and give the server access to them.
 require("./routes/html-routes.js")(app);
+require("./routes/contact-api-routes.js")(app);
 
 // Start our server so that it can begin listening to client requests.
 db.sequelize.sync({ force: true }).then(function() {
