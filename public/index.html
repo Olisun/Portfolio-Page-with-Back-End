@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <!-- particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!-- jQuery UI -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -71,102 +73,106 @@
       <!-- Accordian Content Box 2 (Portfolio) -->
       <h3 class="ui-accordion-header" id="portfolio">Portfolio</h3>
       <div id=portfolio-container>
-        <div class="animated zoomIn slow">
-          <p><strong>Featured Projects:</strong></p>
-          <br>
-          <div id="featured-projects">
-            <div id="gify-container">
-              <p id="gify-title">GifTastic</p>
+        <p><strong>Featured Projects:</strong></p>
+        <br>
+        <div id="featured-projects">
+          <div id="gify-container">
+            <p id="gify-title">GifTastic</p>
+            <div class="animated zoomIn slow">
               <img src="images/gify.png " id="gify-img">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gifyModal" id="gify-modal-button" style="display: block; margin-left: 120px;">Details</button>
-              <div class="modal fade" id="gifyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
-                      <h5 class="modal-title" id="gify-modal-header">GifTastic</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body" id="gify-modal-body">
-                      <p>Our project was to create an app that would utilize what we learned in class about jQuery AJAX calls and to query the Giphy API database to get gifs. We have to create topic buttons which were appended to the website. The user would
-                        click on a topic button and the website would display 10 gifs from that topic from the API. When the user clicks on another topic button, 10 new gifs would appear and the previous 10 would be replaced. Additionally, there was an
-                        input form where the user could enter in a new topic and a new button would appear. When clicked, the same process described above would repeat. Finally, we had to code a feature where the user could click on the gif image to get
-                        it to play and then click on the image again to get the gif to stop. This last step proved to be my biggest challenge.</p>
-                      <p>I solved this challenge by applying adding data attributes to the images returned from the API object, another topic we covered in class. This project was probably the best example of me applying the techniques and methods learned
-                        in class to make the app work.</p>
-                      <p>For details, code snippets and to see the app in action, please let the Martin and Taka guide you to the appropriate page. Martin (Blue Kitty) to the Github repo and (Taka) Red Kitty to the deployed version on Github.</p>
-                      <a href="https://github.com/Olisun/GifTastic" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
-                      <a href="https://olisun.github.io/GifTastic/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
-                    </div>
-                    <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
-                      <button id="close-modal-one" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gifyModal" id="gify-modal-button" style="display: block; margin-left: 120px;">Details</button>
+            <div class="modal fade" id="gifyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <h5 class="modal-title" id="gify-modal-header">GifTastic</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="gify-modal-body">
+                    <p>Our project was to create an app that would utilize what we learned in class about jQuery AJAX calls and to query the Giphy API database to get gifs. We have to create topic buttons which were appended to the website. The user would
+                      click on a topic button and the website would display 10 gifs from that topic from the API. When the user clicks on another topic button, 10 new gifs would appear and the previous 10 would be replaced. Additionally, there was an
+                      input form where the user could enter in a new topic and a new button would appear. When clicked, the same process described above would repeat. Finally, we had to code a feature where the user could click on the gif image to get
+                      it to play and then click on the image again to get the gif to stop. This last step proved to be my biggest challenge.</p>
+                    <p>I solved this challenge by applying adding data attributes to the images returned from the API object, another topic we covered in class. This project was probably the best example of me applying the techniques and methods learned
+                      in class to make the app work.</p>
+                    <p>For details, code snippets and to see the app in action, please let the Martin and Taka guide you to the appropriate page. Martin (Blue Kitty) to the Github repo and (Taka) Red Kitty to the deployed version on Github.</p>
+                    <a href="https://github.com/Olisun/GifTastic" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1);"></i></a>
+                    <a href="https://olisun.github.io/GifTastic/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                  </div>
+                  <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <button id="close-modal-one" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="train-container">
-              <p id="train-title">Train-Schedules</p>
+          </div>
+          <div id="train-container">
+            <p id="train-title">Train-Schedules</p>
+            <div class="animated zoomIn slow delay-1s">
               <img src="images/train.png " id="train-img">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#trainModal" id="train-modal-button" style="display: block; margin-left: 150px;">Details</button>
-              <div class="modal fade" id="trainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
-                      <h5 class="modal-title" id="train-modal-title">Train-Schedules</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body" id="train-modal-body">
-                      <p>Utilizing what we learned with Firebase’s Realtime Database, we were tasked with building a mock train schedule app where the user would fill out input fields on a form and the app would capture that data and send it up to the Firebase
-                        cloud. The data included the name of the train line; the destination; the train departure frequency and what time the first train leaves for the day. Taking this data, we were tasked with calculating when the next train would arrive
-                        and the append a schedule back down to the DOM.</p>
-                      <p>This project required not only Firebase database methods, but also Moment.js. The task to write code to accurately predict the train schedule and to format the times with Moment was a great learning expeience. Additionally, I ran
-                        into some challenges appending the schedule back down to the table on the website.</p>
-                      <p>My solution to the append issue was pretty simple but it proved to me that my problem solving skills are improving. I created a specific ID in the body section of the table and it worked. Learning Moment.js on the fly was a good
-                        practice is utilizing documentation, something that is standard practice in this field and something that I’m still learning to master.</p>
-                      <p>Martin (Blue Kitty) will take you to my Github repository for this project. (Taka) Red Kitty will take you to the deployed site on Github pages.</p>
-                      <a href="https://github.com/Olisun/Train-Schedules" target="blank"> <i class="fa fa-github" style="font-size: 30px; color:  rgba(32, 32, 172, 1);"></i></a>
-                      <a href="https://olisun.github.io/Train-Schedules/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
-                    </div>
-                    <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
-                      <button id="close-modal-two" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#trainModal" id="train-modal-button" style="display: block; margin-left: 150px;">Details</button>
+            <div class="modal fade" id="trainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <h5 class="modal-title" id="train-modal-title">Train-Schedules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="train-modal-body">
+                    <p>Utilizing what we learned with Firebase’s Realtime Database, we were tasked with building a mock train schedule app where the user would fill out input fields on a form and the app would capture that data and send it up to the Firebase
+                      cloud. The data included the name of the train line; the destination; the train departure frequency and what time the first train leaves for the day. Taking this data, we were tasked with calculating when the next train would arrive
+                      and the append a schedule back down to the DOM.</p>
+                    <p>This project required not only Firebase database methods, but also Moment.js. The task to write code to accurately predict the train schedule and to format the times with Moment was a great learning expeience. Additionally, I ran into
+                      some challenges appending the schedule back down to the table on the website.</p>
+                    <p>My solution to the append issue was pretty simple but it proved to me that my problem solving skills are improving. I created a specific ID in the body section of the table and it worked. Learning Moment.js on the fly was a good practice
+                      is utilizing documentation, something that is standard practice in this field and something that I’m still learning to master.</p>
+                    <p>Martin (Blue Kitty) will take you to my Github repository for this project. (Taka) Red Kitty will take you to the deployed site on Github pages.</p>
+                    <a href="https://github.com/Olisun/Train-Schedules" target="blank"> <i class="fa fa-github" style="font-size: 30px; color:  rgba(32, 32, 172, 1);"></i></a>
+                    <a href="https://olisun.github.io/Train-Schedules/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(206, 25, 25, 1);"></i></a>
+                  </div>
+                  <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <button id="close-modal-two" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="trivia-container">
-              <p id="trivia-title">Trivia Game</p>
+          </div>
+          <div id="trivia-container">
+            <p id="trivia-title">Trivia Game</p>
+            <div class="animated zoomIn slow delay-2s">
               <img src="images/trivia.png " id="trivia-img">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#triviaModal" id="trivia-modal-button" style="display: block;margin-left: 150px;">Details</button>
-              <div class="modal fade" id="triviaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
-                      <h5 class="modal-title" id="trivia-modal-title">Trivia Game</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body" id="trivia-modal-body">
-                      <p>Our project was to create a multiple choice and or true-false game using where the user must answer a set of questions within a given amount of time. If the time runs out, the quiz automatically stops. If the user finishes before
-                        time is up, she is given the option to see her score. The game must keep track of answers guessed correctly; answers guess incorrectly as well as unanswered questions.</p>
-                      <p>I chose radio buttons for the HTML DOM elements. Not only did this work stylistically but you can also grab the input values from each radio button using javascript.</p>
-                      <p>This proved to be a challenging assignment for me. Initially, I coded all my logic around each radio button answer. I ran into a major bug where if the user answered a question but then changed her mind, both marked answers were
-                        counted.
-                      </p>
-                      <p>My solution was to refactor the code around each set of questions rather than each individual radio button answer. Doing it this way, I was able to implement the if / else logic accurately and if the user marked one answer but changed
-                        it to another answer, the correct score was calculated.</p>
-                      <p>For further details about this project, please click Martin (Blue Kitty) to be taken to the repository and Taka (Red Kitty) to see the game in action on the Github deployed site.</p>
-                      <a href="https://github.com/Olisun/TriviaGame" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1)"></i></a>
-                      <a href="https://olisun.github.io/TriviaGame/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color:  rgba(206, 25, 25, 1);"></i></a>
-                    </div>
-                    <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
-                      <button id="close-modal-three" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#triviaModal" id="trivia-modal-button" style="display: block;margin-left: 150px;">Details</button>
+            <div class="modal fade" id="triviaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <h5 class="modal-title" id="trivia-modal-title">Trivia Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body" id="trivia-modal-body">
+                    <p>Our project was to create a multiple choice and or true-false game using where the user must answer a set of questions within a given amount of time. If the time runs out, the quiz automatically stops. If the user finishes before time
+                      is up, she is given the option to see her score. The game must keep track of answers guessed correctly; answers guess incorrectly as well as unanswered questions.</p>
+                    <p>I chose radio buttons for the HTML DOM elements. Not only did this work stylistically but you can also grab the input values from each radio button using javascript.</p>
+                    <p>This proved to be a challenging assignment for me. Initially, I coded all my logic around each radio button answer. I ran into a major bug where if the user answered a question but then changed her mind, both marked answers were counted.
+                    </p>
+                    <p>My solution was to refactor the code around each set of questions rather than each individual radio button answer. Doing it this way, I was able to implement the if / else logic accurately and if the user marked one answer but changed
+                      it to another answer, the correct score was calculated.</p>
+                    <p>For further details about this project, please click Martin (Blue Kitty) to be taken to the repository and Taka (Red Kitty) to see the game in action on the Github deployed site.</p>
+                    <a href="https://github.com/Olisun/TriviaGame" target="blank"> <i class="fa fa-github" style="font-size: 30px; color: rgba(32, 32, 172, 1)"></i></a>
+                    <a href="https://olisun.github.io/TriviaGame/index.html" target="blank"> <i class="fa fa-github" style="font-size: 30px; color:  rgba(206, 25, 25, 1);"></i></a>
+                  </div>
+                  <div class="modal-footer" style="background-color: rgba(32, 32, 172, 1); color: rgba(255, 255, 255, 1);">
+                    <button id="close-modal-three" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- </div> -->
         <div>
           <br><br>
           <div class="animated fadeInUpBig slow">
@@ -344,6 +350,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 
+    <!-- particles.js -->
+    <script src="js/particles.js" type="text/javascript"></script>
     <!-- my JavaScript -->
     <script type="text/javascript " src="javascript/contact-me.js "></script>
     <script type="text/javascript " src="javascript/animations.js "></script>
