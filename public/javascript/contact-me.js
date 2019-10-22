@@ -2,13 +2,14 @@ $(document).ready(function() {
 
   var newNameInput = $("#new-name");
   var newMessageInput = $("#new-message");
-  console.log('hello')
+  var submitButton = $("#ping");
 
   $(document).on("click", "#createContact", function(event) {
     event.preventDefault();
     console.log('on-click running')
     createContact();
   })
+
   getContacts();
 
   function createContact() {
@@ -21,8 +22,6 @@ $(document).ready(function() {
       name: newNameInput.val().trim(),
       message: newMessageInput.val().trim()
     });
-    // alert(newNameInput.val().trim());
-    // alert(newMessageInput.val().trim());
   }
 
   function newContact(userData) {
@@ -39,7 +38,7 @@ $(document).ready(function() {
     });
   }
 
-  function alertSender() {
-    alert("Your message has been sent.")
-  };
+  submitButton.on("click", function() {
+    alert("Thank you! Message sent.")
+  });
 });
