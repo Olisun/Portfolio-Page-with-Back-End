@@ -12,6 +12,9 @@ module.exports = function(app) {
 
   app.post("/api/contacts", function(req, res) {
 
+    console.log("api/contacts route hit successfully")
+    console.log(req)
+    console.log(res)
     db.ContactMe.create(req.body).then(function(dbContactMe) {
       res.json(dbContactMe);
     });
